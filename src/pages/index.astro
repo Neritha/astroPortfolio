@@ -30,39 +30,47 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, je m'appelle Victoria Carré"
+					tagline="Bienvenu sur le portfolio d'une étudiante en BTS SIO"
 					align="start"
 				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
+					<!--<div class="roles">
+						<Pill><Icon icon="code" size="1.33em" /> Developeur</Pill>
+						<!--<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
 						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+					</div> -->
+
+					<div class="cta">
+						<CallToAction href="/about/">
+							En savoir plus
+							<Icon icon="arrow-right" size="1.2em" />
+						</CallToAction>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
+					alt="image d'accueil"
+					width="564"
+					height="564"
+					src="./assets/portraitAccueil3.jpg"
 				/>
 			</header>
 
 			<Skills />
+			
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Quelques projets</h3>
+					<p>Découvrez mes derniers projets !</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="offset">
 						{
-							projects.map((project) => (
+							projects.slice(0, 2).map((project) => (
 								<li>
 									<PortfolioPreview project={project} />
 								</li>
@@ -73,12 +81,12 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Tous voir
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
-
+<!-- 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Mentions</h3>
@@ -100,6 +108,8 @@ const projects = (await getCollection('work'))
 					</Grid>
 				</div>
 			</section>
+	
+-->
 		</main>
 
 		<ContactCTA />
