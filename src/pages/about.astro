@@ -2,7 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
+import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
+
+
+import CallToAction from '../components/CallToAction.astro';
+
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+
+
 ---
 
 <BaseLayout title="Profil | Victoria Carré" description="Profil de Victoria Carré">
@@ -20,47 +30,69 @@ import Hero from '../components/Hero.astro';
 				/>
 			</Hero>
 
+
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Mon Parcours</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl
-						condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu
-						odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum
-						dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Après avoir obtenu mon baccalauréat avec une spécialité en mathématiques et physique, j'ai choisi de poursuivre mes études en BTS SIO, plus précisément en deuxième année avec l'option SLAM (Solutions Logicielles et Applications Métiers).
+
+						Le choix de cette filière découle de ma passion pour les sciences et mon intérêt croissant pour les applications pratiques de l'informatique dans le monde professionnel. Actuellement, je me concentre sur le développement de solutions logicielles adaptées aux besoins spécifiques des organisations.
+
+						Cette deuxième année de BTS offre des opportunités passionnantes pour appliquer mes connaissances théoriques à des projets concrets. Chaque défi représente une chance d'approfondir mes compétences et de comprendre davantage les nuances du domaine.
+
+						Je suis enthousiaste à l'idée de contribuer au monde des solutions logicielles et des applications métiers. Mon parcours académique reflète mon engagement envers l'excellence et mon désir de jouer un rôle significatif dans le domaine de l'informatique appliquée.
 					</p>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Mes compétences</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<li>python</li>
+					<li>C#</li>
+					<li>PHP</li>
+					<li>SQL</li>
+					<li>CSS</li>
+					<li>HTML</li>
+					<li>Git & GitHub</li>
+					<li>Visual Studio & VSCode</li>
+					<li>Framework Symfony</li>
+				</div>
+
+			</section>
+
+			<section>
+				<h2 class="section-title">Me Contacter</h2>
+				<div class="content">
+					<li>mail : victoria.carre78@gmail.com</li>
+					<li>tel : 06 02 35 58 56</li>
 				</div>
 			</section>
+
+
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title">Voir mon CV</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<CallToAction href="https://github.com/Neritha/CV/blob/master/CV_Carre_Victoria.pdf">
+						Télécharger le CV
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+					
 				</div>
+
 			</section>
+
+
+
+
 		</main>
 
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+
 
 <style>
 	.about {
@@ -118,4 +150,21 @@ import Hero from '../components/Hero.astro';
 			font-size: var(--text-lg);
 		}
 	}
+
+
+	.card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+        font-size: var(--text-xl);
+        color: var(--gray-0);
+        margin-bottom: 8px;
+    }
+
+
+
 </style>
