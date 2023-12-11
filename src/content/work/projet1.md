@@ -1,7 +1,7 @@
 ---
 title: Cine Choice
 publishDate: 2019-10-02 00:00:00
-img: /assets/stock-1.jpg
+img: ././assets/stock-1.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
   En groupe nous avons développer une application de gestion de cinéma
