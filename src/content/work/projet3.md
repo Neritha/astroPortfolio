@@ -12,8 +12,22 @@ tags:
 
 ### Lien
 
-[Cine Choice sur GitHub](https://github.com/Neritha/cesar)
+[Le projet sur GitHub](https://github.com/Neritha/cesar)
 
 ### Description
 
-Ce projet à pour but de créer un programme de cryptographie en Avocat, Avocette et en Cesar
+Ce projet à pour but de créer un programme de cryptage et décryptage en Avocat, Avocette et en Cesar.
+
+#### Cesar
+
+Ce code connus de tous pour sont rapport simpliciter et degret de sécurité du message crypté. Il consite à décaler d'un pas donné chaque lettre du  message dans l'alphabet.
+
+#### Avocat
+
+Tous comme le cesar en utilisant uniquement le décalage A -> K .
+
+#### Avocette
+
+De la même manière que precedement avec A -> 7.
+
+
